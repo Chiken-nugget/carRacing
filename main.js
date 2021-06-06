@@ -90,3 +90,39 @@ function right(){
         
     }
 }
+function up(){
+    if(car2_y<=0){
+        car2_y=car2_y-10;
+        console.log("When up arrow is pressed, then x is ="+car2_x+"| y="+ car2_y);
+        uploadBackground();
+        uploadCar2();
+      
+    }
+}
+function down(){
+    if(car2_y<=500){
+        car2_y=car1_y+10;
+        console.log("When down arrow is pressed, then x is ="+car2_x+"| y="+ car2_y);
+        uploadBackground();
+        uploadCar2();
+       
+    }
+}
+function left(){
+    if(car2_x<=0){
+        car2_x=car2_x-10;
+        console.log("When left arrow is pressed, then x is ="+car2_x+"| y="+ car2_y);
+        uploadBackground();
+        uploadCar2();
+        
+    }
+}
+function right(){
+    if(car2_x<=700){
+        car2_x=car1_x+10;
+        console.log("When right arrow is pressed, then x is ="+car2_x+"| y="+ car2_y);
+        uploadBackground();
+        uploadCar2();
+        
+    }
+}
